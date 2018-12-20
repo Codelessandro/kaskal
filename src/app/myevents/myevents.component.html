@@ -1,0 +1,21 @@
+<div>
+
+
+  <p-tabView>
+    <p-tabPanel header="Listenansicht">
+      <h1>Termine, an denen ich teilnehme</h1>
+
+      <app-event *ngFor="let event of events" [event]="event"></app-event>
+
+
+    </p-tabPanel>
+    <p-tabPanel header="Kalender">
+      Calendar-View
+      <p-schedule [events]="events"></p-schedule>
+      -
+    </p-tabPanel>
+
+  </p-tabView>
+
+
+</div>

@@ -1,0 +1,24 @@
+<p-card>
+  <p-header>
+
+    <img src="{{ event.imageurl }}" style="max-width:400px"/><br />
+
+    <h3>{{ event.title }}</h3>
+    <h4>{{ event.date }} - Gruppe: {{ event.group }}</h4>
+
+  </p-header>
+
+  {{  event.description }}
+  <p-footer>
+    <p-progressBar [value]="event.occupation"></p-progressBar>
+    <div style="text-align: right">
+      <br />
+      <p-growl [(value)]="msgs"></p-growl>
+
+      <button pButton type="button" label="{{ event.button }}" (click)="takepart(event)"></button>
+
+
+    </div>
+  </p-footer>
+</p-card>
+

@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+#main {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 1fr;
+}
